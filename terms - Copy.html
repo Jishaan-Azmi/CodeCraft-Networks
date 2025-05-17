@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo big.jpg" type="image/jpg">
+    <title>MSBTE Internship T&C | CodeCraft Networks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3a0ca3;
+            --accent: #f72585;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --success: #4cc9f0;
+            --warning: #f8961e;
+            --danger: #ef233c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f5f7ff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==');
+            opacity: 0.4;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        .logo {
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
+        
+        /* Main Content */
+        main {
+            padding: 3rem 0;
+        }
+        
+        .terms-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .term-section {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .term-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2 i {
+            margin-right: 12px;
+            color: var(--accent);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: var(--gray);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, var(--dark), #343a40);
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .footer-logo {
+            flex: 0 0 100%;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-logo img {
+            height: 50px;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 1.5rem;
+            padding: 0 15px;
+        }
+        
+        .footer-links h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .footer-links h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 40px;
+            height: 3px;
+            background: var(--accent);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.6rem;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            background: rgba(255,255,255,0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            background: var(--primary);
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .terms-container {
+                padding: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .terms-container {
+                padding: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+            
+            .footer-links {
+                flex: 0 0 50%;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            header {
+                padding: 1.5rem 0;
+            }
+            
+            h1 {
+                font-size: 1.6rem;
+            }
+            
+            .terms-container {
+                padding: 1.2rem;
+                border-radius: 8px;
+            }
+            
+            .footer-links {
+                flex: 0 0 100%;
+                text-align: center;
+            }
+            
+            .footer-links h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .back-to-top {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <img src="images/logo big.jpg" alt="CodeCraft Networks Logo" class="logo">
+            <h1>MSBTE Internship Program</h1>
+            <p class="subtitle" style="color:white;">Terms and Conditions for the Internship Program provided by CodeCraft Networks</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="terms-container">
+            <!-- Terms 1-10 -->
+            <div class="term-section">
+                <h2><i class="fas fa-check-circle"></i>1. Acceptance of Terms</h2>
+                <p>By participating in the MSBTE Internship Program provided by CodeCraft Networks ("Company"), you agree to comply with these Terms and Conditions.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-graduation-cap"></i>2. Internship Purpose</h2>
+                <p>The internship is solely for educational and learning purposes. No employment guarantee is provided upon completion.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-user-graduate"></i>3. Eligibility</h2>
+                <p>Only students enrolled in MSBTE-affiliated institutions are eligible for this internship.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-calendar-alt"></i>4. Internship Duration</h2>
+                <p>The duration will be as specified in the internship offer letter.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-copyright"></i>5. Project Ownership</h2>
+                <p>All projects, code, designs, documents, and materials created by interns during the internship are the sole property of CodeCraft Networks.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-lock"></i>6. Intellectual Property Rights</h2>
+                <p>Interns waive all rights, titles, and interests in any work produced during the internship.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-file-signature"></i>7. Non-Disclosure Agreement (NDA)</h2>
+                <p>Interns must maintain confidentiality regarding company projects, processes, and proprietary information.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-handshake"></i>8. Non-Compete Clause</h2>
+                <p>Interns shall not engage in similar projects with competitors during and for 6 months post-internship.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-certificate"></i>9. Certificate of Completion</h2>
+                <p>Certificates will be issued only upon successful completion of the internship as per company standards.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-exclamation-triangle"></i>10. Termination Policy</h2>
+                <p>The company reserves the right to terminate an intern for misconduct, non-performance, or violation of terms.</p>
+            </div>
+
+            <!-- Terms 11-20 -->
+            <div class="term-section">
+                <h2><i class="fas fa-user-clock"></i>11. Attendance & Punctuality</h2>
+                <p>Regular attendance and adherence to schedules are mandatory.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-tasks"></i>12. Work Submission</h2>
+                <p>All assigned tasks must be submitted within deadlines.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-copy"></i>13. Plagiarism Prohibition</h2>
+                <p>Any form of plagiarism will result in immediate termination.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-user-tie"></i>14. Code of Conduct</h2>
+                <p>Professional behavior is expected at all times.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-tshirt"></i>15. Dress Code (if applicable)</h2>
+                <p>Follow the company's dress code policy (if specified).</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-laptop"></i>16. Use of Company Resources</h2>
+                <p>Company-provided resources (software, hardware) must be used responsibly.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-database"></i>17. Data Security</h2>
+                <p>Interns must follow data protection policies and avoid unauthorized data sharing.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-money-bill-wave"></i>18. No Monetary Compensation</h2>
+                <p>This is an unpaid internship unless stated otherwise.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-shield-alt"></i>19. Liability Waiver</h2>
+                <p>The company is not liable for any injuries or losses during the internship.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-briefcase"></i>20. No Guarantee of Employment</h2>
+                <p>Completion does not ensure future employment with CodeCraft Networks.</p>
+            </div>
+
+            <!-- Terms 21-30 -->
+            <div class="term-section">
+                <h2><i class="fas fa-comment-alt"></i>21. Feedback & Evaluation</h2>
+                <p>Interns must participate in feedback sessions as required.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-balance-scale"></i>22. Compliance with Laws</h2>
+                <p>All activities must comply with Indian laws and regulations.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-edit"></i>23. Modification of Terms</h2>
+                <p>The company may modify these terms at any time without prior notice.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-gavel"></i>24. Dispute Resolution</h2>
+                <p>Any disputes shall be resolved under Maharashtra jurisdiction.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-clipboard-list"></i>25. Intern Responsibilities</h2>
+                <p>Follow instructions, complete tasks, and adhere to company policies.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-share-square"></i>26. No Unauthorized Sharing</h2>
+                <p>Interns shall not share project details on public platforms without permission.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-hashtag"></i>27. Social Media Policy</h2>
+                <p>Avoid posting confidential company information on social media.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-users"></i>28. Respect for Colleagues</h2>
+                <p>Maintain a respectful and harassment-free environment.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-briefcase"></i>29. No Outside Work During Internship</h2>
+                <p>Interns must not engage in external work conflicting with internship duties.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-sitemap"></i>30. Reporting Structure</h2>
+                <p>Interns must report to assigned mentors/supervisors.</p>
+            </div>
+
+            <!-- Terms 31-40 -->
+            <div class="term-section">
+                <h2><i class="fas fa-home"></i>31. Work From Home (if applicable)</h2>
+                <p>If remote work is allowed, interns must maintain productivity.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-tools"></i>32. Equipment Care</h2>
+                <p>Any company-provided equipment must be returned undamaged.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-search"></i>33. Background Check (if applicable)</h2>
+                <p>The company may conduct background checks if necessary.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-id-card"></i>34. No Misrepresentation</h2>
+                <p>Interns must provide accurate information in applications.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-hand-holding-usd"></i>35. Non-Solicitation</h2>
+                <p>Interns shall not solicit company employees/clients for personal gain.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-chalkboard-teacher"></i>36. Training Sessions</h2>
+                <p>Attendance in mandatory training sessions is required.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-chart-line"></i>37. Performance Review</h2>
+                <p>Interns will be evaluated based on performance metrics.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-door-open"></i>38. Exit Formalities</h2>
+                <p>Upon completion, interns must return all company assets.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-file-alt"></i>39. Reference Policy</h2>
+                <p>Reference letters are subject to company discretion.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-exchange-alt"></i>40. No Transfer of Internship</h2>
+                <p>Internship positions are non-transferable.</p>
+            </div>
+
+            <!-- Terms 41-50 -->
+            <div class="term-section">
+                <h2><i class="fas fa-cloud-showers-heavy"></i>41. Force Majeure</h2>
+                <p>The company is not liable for disruptions due to unforeseen events.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-calendar-plus"></i>42. Internship Extension</h2>
+                <p>Extensions are at the company's discretion.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-receipt"></i>43. No Unauthorized Expenses</h2>
+                <p>Expenses incurred without approval will not be reimbursed.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-hand-holding-heart"></i>44. Ethical Practices</h2>
+                <p>Avoid any unethical or fraudulent activities.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-chess-board"></i>45. Conflict of Interest</h2>
+                <p>Interns must disclose any conflicts of interest.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-first-aid"></i>46. Health & Safety Compliance</h2>
+                <p>Follow workplace health and safety guidelines.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-equals"></i>47. No Discrimination Policy</h2>
+                <p>Discrimination based on gender, caste, religion, etc., is prohibited.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-comments"></i>48. Grievance Redressal</h2>
+                <p>Concerns must be reported through official channels.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-comment-slash"></i>49. Non-Disparagement</h2>
+                <p>Interns shall not defame the company publicly.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-book"></i>50. Compliance with Academic Requirements</h2>
+                <p>Interns must ensure the internship aligns with their academic obligations.</p>
+            </div>
+
+            <!-- Terms 51-60 -->
+            <div class="term-section">
+                <h2><i class="fas fa-lightbulb"></i>51. No Intellectual Property Claims</h2>
+                <p>Interns cannot claim ownership of any work done during the internship.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-cubes"></i>52. Software Licensing</h2>
+                <p>Only licensed software may be used for projects.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-desktop"></i>53. No Unauthorized Remote Access</h2>
+                <p>Remote access to company systems requires permission.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-file-word"></i>54. Project Documentation</h2>
+                <p>Proper documentation of work is mandatory.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-user-friends"></i>55. No Unapproved Collaborations</h2>
+                <p>Collaborations with external parties require approval.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-laptop-house"></i>56. No Personal Use of Company Assets</h2>
+                <p>Company resources must not be used for personal projects.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-user-secret"></i>57. Data Privacy Compliance</h2>
+                <p>Adherence to data privacy laws (e.g., IT Act, GDPR if applicable).</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-video"></i>58. No Unauthorized Recordings</h2>
+                <p>Recording meetings/conversations without consent is prohibited.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-ban"></i>59. No Harassment Policy</h2>
+                <p>Zero tolerance for workplace harassment.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-exclamation-circle"></i>60. Emergency Protocols</h2>
+                <p>Follow company emergency procedures if needed.</p>
+            </div>
+
+            <!-- Terms 61-70 -->
+            <div class="term-section">
+                <h2><i class="fas fa-trademark"></i>61. No False Claims</h2>
+                <p>Interns must not misrepresent company projects as their own.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-code"></i>62. No Unauthorized Modifications</h2>
+                <p>Do not alter company projects without approval.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-door-closed"></i>63. Mandatory Exit Interview</h2>
+                <p>An exit interview may be required upon completion.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-thumbs-up"></i>64. No Outside Endorsements</h2>
+                <p>Interns cannot endorse products in the company's name.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-server"></i>65. Compliance with IT Policies</h2>
+                <p>Follow IT security protocols strictly.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-download"></i>66. No Unauthorized Software Installation</h2>
+                <p>Only approved software may be installed on company systems.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-file-export"></i>67. No Unauthorized Data Export</h2>
+                <p>Do not transfer company data without permission.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-globe"></i>68. No Unauthorized Public Releases</h2>
+                <p>Projects cannot be published without company approval.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-chart-bar"></i>69. No Insider Trading (if applicable)</h2>
+                <p>Do not misuse confidential information for personal gain.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-money-bill-alt"></i>70. No Bribery or Corruption</h2>
+                <p>Strictly adhere to anti-bribery policies.</p>
+            </div>
+
+            <!-- Terms 71-80 -->
+            <div class="term-section">
+                <h2><i class="fas fa-coins"></i>71. No Unauthorized Financial Transactions</h2>
+                <p>Interns cannot engage in financial dealings on behalf of the company.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-copyright"></i>72. No Violation of Copyrights</h2>
+                <p>Respect third-party copyrights in all projects.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-registered"></i>73. No Unauthorized Use of Trademarks</h2>
+                <p>Do not use company trademarks without permission.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-folder-open"></i>74. No Unauthorized Access to Files</h2>
+                <p>Access only files relevant to assigned tasks.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-chess"></i>75. No Unauthorized Disclosure of Strategies</h2>
+                <p>Company business strategies must remain confidential.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-headset"></i>76. No Unauthorized Client Communication</h2>
+                <p>Client interactions require prior approval.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-image"></i>77. No Unauthorized Use of Logos/Branding</h2>
+                <p>Company branding cannot be used without consent.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-flask"></i>78. No Unauthorized Research</h2>
+                <p>Conduct research only if approved by the company.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-vial"></i>79. No Unauthorized Testing</h2>
+                <p>Do not test systems/projects without permission.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-code-branch"></i>80. No Unauthorized Open-Source Contributions</h2>
+                <p>Contributions to open-source projects require approval.</p>
+            </div>
+
+            <!-- Terms 81-90 -->
+            <div class="term-section">
+                <h2><i class="fas fa-cloud"></i>81. No Unauthorized Cloud Uploads</h2>
+                <p>Do not upload company data to personal cloud storage.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-robot"></i>82. No Unauthorized AI Tool Usage</h2>
+                <p>Use of AI tools must comply with company policies.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-plug"></i>83. No Unauthorized API Integrations</h2>
+                <p>API usage must be pre-approved.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-database"></i>84. No Unauthorized Database Access</h2>
+                <p>Access only authorized databases.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-code"></i>85. No Unauthorized Code Repositories</h2>
+                <p>Do not store company code in personal repositories.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-truck"></i>86. No Unauthorized Vendor Interactions</h2>
+                <p>Vendor communications need approval.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-puzzle-piece"></i>87. No Unauthorized Use of Patents</h2>
+                <p>Respect existing patents in all projects.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-cogs"></i>88. No Unauthorized Automation</h2>
+                <p>Automation scripts must be approved.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-brain"></i>89. No Unauthorized AI Training</h2>
+                <p>Do not train AI models using company data without consent.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-link"></i>90. No Unauthorized Blockchain Projects</h2>
+                <p>Blockchain-related work requires prior approval.</p>
+            </div>
+
+            <!-- Terms 91-100 -->
+            <div class="term-section">
+                <h2><i class="fas fa-wifi"></i>91. No Unauthorized IoT Deployments</h2>
+                <p>IoT projects must follow company guidelines.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-shield-virus"></i>92. No Unauthorized Cybersecurity Testing</h2>
+                <p>Do not conduct security tests without permission.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-tools"></i>93. No Unauthorized Use of Third-Party Tools</h2>
+                <p>Third-party tools require vetting before use.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-digging"></i>94. No Unauthorized Data Mining</h2>
+                <p>Data extraction must comply with company policies.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-fingerprint"></i>95. No Unauthorized Use of Biometric Data</h2>
+                <p>Handling biometric data requires explicit consent.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-vr-cardboard"></i>96. No Unauthorized VR/AR Development</h2>
+                <p>VR/AR projects need prior approval.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-cloud-upload-alt"></i>97. No Unauthorized Use of Cloud Computing</h2>
+                <p>Cloud services must be company-approved.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-chart-pie"></i>98. No Unauthorized Use of Analytics Tools</h2>
+                <p>Analytics tools must be permitted by the company.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-comment-dots"></i>99. No Unauthorized Use of Chatbots</h2>
+                <p>Chatbot development must follow company guidelines.</p>
+            </div>
+
+            <div class="term-section">
+                <h2><i class="fas fa-balance-scale"></i>100. Governing Law</h2>
+                <p>These terms shall be governed by the laws of India.</p>
+                <p>By accepting this internship, you acknowledge that you have read, understood, and agreed to all the above terms.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo big.jpg" alt="CodeCraft Networks">
+                    <p>Empowering the next generation of technologists</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Internship Program</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Malvani Gate no 7 Malad, Mumbai, India</li>
+                        <li><i class="fas fa-phone"></i> +91 8104035311</li>
+                        <li><i class="fas fa-envelope"></i> codecraftnetworks.global@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 CodeCraft Networks. All Rights Reserved.</p>
+                <p>MSBTE Internship Program - Terms and Conditions</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
