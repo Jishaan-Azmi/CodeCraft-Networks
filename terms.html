@@ -128,6 +128,59 @@
             margin-bottom: 1rem;
             color: var(--gray);
         }
+
+        /* New comprehensive terms styles */
+        .comprehensive-terms {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .comprehensive-terms h2 {
+            color: var(--secondary);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+
+        .comprehensive-terms h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .comprehensive-terms .effective-date {
+            text-align: right;
+            font-style: italic;
+            color: var(--gray);
+            margin-bottom: 2rem;
+        }
+
+        .comprehensive-terms .clause {
+            margin-bottom: 1.5rem;
+        }
+
+        .comprehensive-terms .clause-title {
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .comprehensive-terms .sub-clause {
+            margin-left: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .comprehensive-terms .acceptance-notice {
+            background-color: rgba(247, 37, 133, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+        }
         
         /* Footer */
         footer {
@@ -267,8 +320,12 @@
                 font-size: 2.2rem;
             }
             
-            .terms-container {
+            .terms-container, .comprehensive-terms {
                 padding: 2rem;
+            }
+
+            .comprehensive-terms h2 {
+                font-size: 1.6rem;
             }
         }
         
@@ -281,12 +338,20 @@
                 font-size: 1rem;
             }
             
-            .terms-container {
+            .terms-container, .comprehensive-terms {
                 padding: 1.5rem;
             }
             
             h2 {
                 font-size: 1.2rem;
+            }
+
+            .comprehensive-terms h2 {
+                font-size: 1.4rem;
+            }
+
+            .comprehensive-terms h3 {
+                font-size: 1.1rem;
             }
             
             .footer-links {
@@ -303,9 +368,17 @@
                 font-size: 1.6rem;
             }
             
-            .terms-container {
+            .terms-container, .comprehensive-terms {
                 padding: 1.2rem;
                 border-radius: 8px;
+            }
+
+            .comprehensive-terms h2 {
+                font-size: 1.3rem;
+            }
+
+            .comprehensive-terms .sub-clause {
+                margin-left: 1rem;
             }
             
             .footer-links {
@@ -340,11 +413,171 @@
             <h1>MSBTE Internship Program</h1>
             <p class="subtitle" style="color:white;">Terms and Conditions for the Internship Program provided by CodeCraft Networks</p>
         </div>
-    </header><br><br>
+    </header>
 
     <!-- Main Content -->
     <main class="container">
+        <!-- Comprehensive Terms Section -->
+        <div class="comprehensive-terms">
+            <div class="effective-date">Effective Date: [11/06/2023]<br>Last Updated: [01/05/2025]</div>
+            
+            <h2><i class="fas fa-file-contract"></i> Terms and Conditions for Participation in Experiential Learning Engagement</h2>
+            
+            <p>These Terms and Conditions ("Agreement") constitute a legally binding agreement entered into by and between the participant ("You," "Your," or "Intern") and CodeCraft Networks, an MSME-registered entity, herein referred to as "the Organization," "We," "Us," or "Our." By proceeding with registration, remitting participation fees, or commencing activities under the stated engagement, You signify Your acceptance of and commitment to adhere to the stipulations and provisions enumerated herein.</p>
+            
+            <div class="clause">
+                <h3>1. Nature and Scope of Engagement</h3>
+                <div class="sub-clause">
+                    <p class="clause-title">1.1 Educational Intent</p>
+                    <p>The engagement facilitated by CodeCraft Networks is educational in intent and is herein referred to as an "Internship" for nomenclature purposes only. However, it must be expressly understood that such reference does not constitute recognition or categorization of the engagement as an internship under statutory labor or apprenticeship laws.</p>
+                </div>
+                <div class="sub-clause">
+                    <p class="clause-title">1.2 Structure</p>
+                    <p>The Internship is structured as a remote experiential engagement wherein the participant will be required to complete predefined task modules. These tasks are intended to simulate industry-relevant workflows and aim to encourage self-driven exploration and application of technical concepts.</p>
+                </div>
+                <div class="sub-clause">
+                    <p class="clause-title">1.3 Limited Interaction</p>
+                    <p>It is expressly stated that no physical reporting, onboarding process, workplace training, mentorship, or real-time interaction with professional teams shall be part of this engagement. All tasks shall be self-executed based on the guidelines provided, and the Intern bears sole responsibility for their timely and satisfactory completion.</p>
+                </div>
+            </div>
+            
+            <div class="clause">
+                <h3>2. Academic Compliance and Institutional Recognition</h3>
+                <div class="sub-clause">
+                    <p class="clause-title">2.1 MSBTE Alignment</p>
+                    <p>The Internship is designed to align broadly with the general expectations laid out by the Maharashtra State Board of Technical Education (MSBTE) with respect to the mandatory twelve-week internship period prescribed between the second and third academic years.</p>
+                </div>
+                <div class="sub-clause">
+                    <p class="clause-title">2.2 No Guarantee of Recognition</p>
+                    <p>Notwithstanding this alignment, the Organization makes no representation, warranty, or assurance—implied or otherwise—that the Internship will be formally recognized, accredited, or accepted by any academic institution or regulatory authority. Participants are strongly encouraged to seek prior written approval from their respective training and placement cells, heads of department, or institutional authorities.</p>
+                </div>
+                <div class="sub-clause">
+                    <p class="clause-title">2.3 Liability Disclaimer</p>
+                    <p>CodeCraft Networks disclaims all liability arising out of any denial of recognition or validation by colleges, universities, or third-party evaluators with regard to this engagement.</p>
+                </div>
+            </div>
+            
+            <div class="clause">
+                <h3>3. Financial Consideration</h3>
+                <div class="sub-clause">
+                    <p class="clause-title">3.1 Participation Fee</p>
+                    <p>Participation in the Internship requires the remittance of a nominal administrative fee, generally ranging between INR 150 to INR 200, the exact amount of which may vary based on the specific program or batch configuration.</p>
+                </div>
+                <div class="sub-clause">
+                    <p class="clause-title">3.2 Non-Refundable Nature</p>
+                    <p>This fee shall be deemed a non-refundable facilitation charge meant to defray operational overheads, digital certification logistics, and content dissemination efforts. It shall not be construed as a fee for educational services, employment, or consideration for job placement.</p>
+                </div>
+                <div class="sub-clause">
+                    <p class="clause-title">3.3 No Refunds</p>
+                    <p>No portion of this fee shall be eligible for refund or reimbursement under any circumstances, including but not limited to early withdrawal, dissatisfaction with content, technical challenges, or institutional rejection.</p>
+                </div>
+            </div>
+            
+            <div class="clause">
+                <h3>4. Structure, Deliverables, and Mode of Submission</h3>
+                <div class="sub-clause">
+                    <p class="clause-title">4.1 Task Composition</p>
+                    <p>The Internship shall comprise a series of virtual tasks. These may include coding assignments, research topics, documentation, software development modules, or other related activities as communicated by the Organization.</p>
+                </div>
+                <div class="sub-clause">
+                    <p class="clause-title">4.2 Submission Requirements</p>
+                    <p>The Intern is expected to independently execute the tasks and upload evidence of task completion in the form of public video submissions on professional networking platforms (such as LinkedIn). Submissions must adhere to the thematic, branding, and procedural guidelines communicated.</p>
+                </div>
+                <div class="sub-clause">
+                    <p class="clause-title">4.3 Limited Monitoring</p>
+                    <p>The Organization may, at its discretion, monitor, review, or promote these submissions; however, no guarantees are made regarding social engagement, algorithmic visibility, or institutional reach.</p>
+                </div>
+            </div>
+            
+            <div class="clause">
+                <h3>5. Compensation and Stipend</h3>
+                <div class="sub-clause">
+                    <p class="clause-title">5.1 Non-Remunerative Nature</p>
+                    <p>The Internship is strictly non-remunerative. The Intern shall not be entitled to receive any monetary compensation, stipend, honorarium, reimbursement, or benefit in cash or kind.</p>
+                </div>
+                <div class="sub-clause">
+                    <p class="clause-title">5.2 No Grievance Basis</p>
+                    <p>The absence of a stipend is an intrinsic component of the Internship's voluntary and educational character, and shall not form the basis of any grievance, claim, or legal demand.</p>
+                </div>
+            </div>
+            
+            <div class="clause">
+                <h3>6. Certificate of Completion</h3>
+                <div class="sub-clause">
+                    <p class="clause-title">6.1 Issuance</p>
+                    <p>Upon successful completion of the designated tasks, and subject to the Organization's discretionary review and validation of the Intern's submitted materials, a digital Certificate of Completion may be issued via electronic means.</p>
+                </div>
+                <div class="sub-clause">
+                    <p class="clause-title">6.2 Symbolic Nature</p>
+                    <p>The issuance of said certificate shall be considered a symbolic acknowledgment of participation and not an attestation of academic competence, industrial proficiency, or formal training under any statutory or educational framework.</p>
+                </div>
+            </div>
+            
+            <div class="clause">
+                <h3>7. Rights and Permissions</h3>
+                <div class="sub-clause">
+                    <p class="clause-title">7.1 License Grant</p>
+                    <p>By participating in the Internship, You grant the Organization an irrevocable, perpetual, royalty-free, and transferable license to use, reproduce, modify, distribute, and display any content created and/or submitted by You as part of this engagement—including but not limited to social media posts, task videos, testimonials, and written assignments—for marketing, archival, analytical, or promotional purposes.</p>
+                </div>
+            </div>
+            
+            <div class="clause">
+                <h3>8. Disclaimers and Limitation of Liability</h3>
+                <div class="sub-clause">
+                    <p class="clause-title">8.1 Content Disclaimer</p>
+                    <p>The Organization disclaims any and all liability for errors, inaccuracies, or omissions in the content provided during the Internship, and shall not be held responsible for any direct, indirect, incidental, consequential, or punitive damages arising from participation.</p>
+                </div>
+                <div class="sub-clause">
+                    <p class="clause-title">8.2 Force Majeure</p>
+                    <p>CodeCraft Networks shall not be liable for failure to perform its obligations under this Agreement if such failure results from acts of God, governmental actions, labor unrest, pandemics, or other circumstances beyond reasonable control.</p>
+                </div>
+            </div>
+            
+            <div class="clause">
+                <h3>9. Termination and Suspension</h3>
+                <div class="sub-clause">
+                    <p class="clause-title">9.1 Right to Terminate</p>
+                    <p>The Organization reserves the right to terminate or suspend Your participation in the Internship without prior notice, and without any obligation to provide justification, should it determine (in its sole discretion) that You have violated any of these Terms or have acted in a manner inconsistent with the intended educational spirit of the program.</p>
+                </div>
+                <div class="sub-clause">
+                    <p class="clause-title">9.2 Consequences of Termination</p>
+                    <p>Upon termination, all rights to certificates, access to tasks, and further communication shall be revoked.</p>
+                </div>
+            </div>
+            
+            <div class="clause">
+                <h3>10. Governing Law and Jurisdiction</h3>
+                <div class="sub-clause">
+                    <p class="clause-title">10.1 Applicable Law</p>
+                    <p>This Agreement shall be governed by and construed in accordance with the laws of the Republic of India.</p>
+                </div>
+                <div class="sub-clause">
+                    <p class="clause-title">10.2 Dispute Resolution</p>
+                    <p>Any disputes, controversies, or claims arising out of or relating to this Agreement shall be submitted to the exclusive jurisdiction of the competent courts located in [Insert City, State], and both parties hereby irrevocably consent to such jurisdiction.</p>
+                </div>
+            </div>
+            
+            <div class="clause">
+                <h3>11. Miscellaneous</h3>
+                <div class="sub-clause">
+                    <p class="clause-title">11.1 Amendments</p>
+                    <p>The Organization may revise these Terms at any time by updating this page. Continued participation shall be construed as acceptance of the revised Terms.</p>
+                </div>
+                <div class="sub-clause">
+                    <p class="clause-title">11.2 Severability</p>
+                    <p>If any clause herein is deemed unenforceable or invalid under applicable law, the remaining provisions shall remain in full force and effect.</p>
+                </div>
+            </div>
+            
+            <div class="acceptance-notice">
+                <p>BY CONTINUING WITH REGISTRATION OR PARTICIPATION, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND CONSENTED TO THESE TERMS IN FULL. IF YOU DO NOT AGREE, PLEASE REFRAIN FROM ENGAGEMENT.</p>
+            </div>
+        </div>
+
+        <!-- Detailed Numbered Terms Section -->
         <div class="terms-container">
+            <h2 style="text-align: center; border-bottom: none; justify-content: center;"><i class="fas fa-list-ol"></i> Detailed Terms and Conditions</h2>
+            
             <!-- Terms 1-10 -->
             <div class="term-section">
                 <h2><i class="fas fa-check-circle"></i>1. Acceptance of Terms</h2>
@@ -361,6 +594,8 @@
                 <p>Only students enrolled in MSBTE-affiliated institutions are eligible for this internship.</p>
             </div>
 
+            <!-- [Rest of your existing numbered terms sections 4-100...] -->
+            <!-- Terms 4-10 -->
             <div class="term-section">
                 <h2><i class="fas fa-calendar-alt"></i>4. Internship Duration</h2>
                 <p>The duration will be as specified in the internship offer letter.</p>
