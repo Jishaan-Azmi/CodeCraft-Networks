@@ -39,6 +39,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./style.css">
   <style type="text/css">
     /*@media only screen and (max-width: 1400px) { 
         .con {
@@ -118,7 +119,7 @@
         <div class="col-12">
           <div class="dots"></div>
           <div class="row justify-content-center">
-            <div class="col-md-7 text-center mb-5">
+            <div class="col-md-7 text-center mb-5" style="z-index: 5;">
               <h1 class="heading" data-aos="fade-up" data-aos-delay="0">A Better Place To Work<span class="d-block">In <a href="#">CodeCraft</a></span></h1>
             </div>
           </div>
@@ -153,6 +154,13 @@
       
     </div> -->
   </div> <!-- /.untree_co-hero -->
+
+  <div id="particles-js"></div>
+
+<!-- stats - count particles -->
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
 
   <div class="untree_co-section">
     <div class="container">
@@ -1376,6 +1384,10 @@
     // Call initializeCounts when the page loads
     document.addEventListener("DOMContentLoaded", initializeCounts);
 </script>
+<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+<script src='https://threejs.org/examples/js/libs/stats.min.js'></script><script  src="./script.js"></script>
+
+
 </body>
 
 </html>
